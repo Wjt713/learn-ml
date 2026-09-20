@@ -4,8 +4,8 @@ from ucimlrepo import fetch_ucirepo
 
 class LinearRegression:
     def __init__(self, X, y):
-        self.X = X
-        self.y = y
+        self.X = X  # feature (design) matrix
+        self.y = y  # target
         self.n = y.shape[0]
         self.d = X.shape[1]
 
