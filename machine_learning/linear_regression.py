@@ -3,7 +3,6 @@ from ucimlrepo import fetch_ucirepo
 
 
 class LinearRegression:
-
     def __init__(self, X, y):
         self.X = X
         self.y = y
@@ -27,7 +26,6 @@ class LinearRegression:
 
 
 class GradientDescent:
-
     def __init__(self, learning_rate=0.03, epochs=5000):
         self.lr = learning_rate
         self.epochs = epochs
