@@ -6,8 +6,8 @@ class LinearRegression:
     def __init__(self, X, y):
         self.X = X  # feature (design) matrix
         self.y = y  # target
-        self.n = y.shape[0]
-        self.d = X.shape[1]
+        self.n = y.shape[0]  # number of samples
+        self.d = X.shape[1]  # number of features
 
     def compute_loss(self, w, b):
         y_pred = self.X @ w + b
